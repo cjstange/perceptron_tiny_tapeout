@@ -19,18 +19,18 @@ Chris Stange
 
 ## Inputs/Outputs
 
-###Input signals:
-⋅⋅* go
-⋅⋅* update
-⋅⋅* correct
-⋅⋅* sel_out 
-⋅⋅* in_val 
+### Input signals:
+* go
+* update
+* correct
+* sel_out 
+* in_val 
 
-###Output signal:
-⋅⋅* done
-⋅⋅* classification
-⋅⋅* sync
-⋅⋅* out_val
+### Output signal:
+* done
+* classification
+* sync
+* out_val
 
 ## Design Testing / Bringup
 
@@ -41,7 +41,7 @@ Chris Stange
 (explain how to test your design; if relevant, give examples of inputs and expected outputs)
 
 ## Media
-
+Testbench output:
 ![Testbench output](/docs/test.png)
 
 ## Further development
