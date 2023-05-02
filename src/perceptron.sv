@@ -227,6 +227,8 @@ module fsm
             T1: nextState = T2;
 
             T2: nextState = CHECK;
+
+            default: nextState = INIT; 
         endcase
     end
 
