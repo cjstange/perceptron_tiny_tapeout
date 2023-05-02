@@ -36,7 +36,7 @@ module datapath
     logic [5:0] add_A, add_B, mult_A, mult_B;
 
     //input mux
-    mux #(4) input_mux(.in({w0, w1, w2, add_out_reg}),
+    mux #(4, 6) input_mux(.in({w0, w1, w2, add_out_reg}),
                           .sel(sel_out),
                           .out(out_val));
 
@@ -102,12 +102,12 @@ module datapath
               .M(mult_out));
 
     //mult_A mux
-    mux #(4) mult_A_mux(.in({w1, w2, n, mult_out_reg}),
+    mux #(4, 6) mult_A_mux(.in({w1, w2, n, mult_out_reg}),
                            .sel(sel_mult_A),
                            .out(mult_A));
 
     //mult_B mux
-    mux #(4) mult_B_mux(.in({x1, x2, 6'd1, d}),
+    mux #(4, 6) mult_B_mux(.in({x1, x2, 6'd1, d}),
                            .sel(sel_mult_B),
                            .out(mult_B));
 
@@ -126,12 +126,12 @@ module datapath
                    .sum(add_out));
 
     //add_A mux
-    mux #(2) add_A_mux(.in({6'd0, mult_out_reg}),
+    mux #(2, 6) add_A_mux(.in({6'd0, mult_out_reg}),
                           .sel(sel_add_A),
                           .out(add_A));
 
     //add_B mux
-    mux #(4) add_B_mux(.in({w0, add_out_reg, w1, w2}),
+    mux #(4, 6) add_B_mux(.in({w0, add_out_reg, w1, w2}),
                           .sel(sel_add_B),
                           .out(add_B));
 
@@ -228,7 +228,7 @@ module fsm
 
             T2: nextState = CHECK;
 
-            default: nextState = INIT; 
+            default: nextState = INIT;
         endcase
     end
 

@@ -30,12 +30,12 @@ module register
     end
 endmodule: register
 
-//mux for 6-bit signals
+//mux
 module mux
-    #(parameter INPUTS=0)
-    (input  logic [INPUTS-1:0][5:0]   in,
+    #(parameter INPUTS=0, WIDTH=0)
+    (input  logic [INPUTS-1:0][WIDTH-1:0]   in,
      input  logic [$clog2(INPUTS)-1:0]      sel,
-     output logic [5:0]               out);
+     output logic [WIDTH-1:0]               out);
 
     assign out = in[sel];
 endmodule: mux

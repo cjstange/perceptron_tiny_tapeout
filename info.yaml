@@ -3,7 +3,6 @@ project:
   source_files:
     - toplevel_chip.v
     - chip.sv
-    - decoder.v
     - perceptron.sv
     - lib.v
   top_module:  "toplevel_chip"
