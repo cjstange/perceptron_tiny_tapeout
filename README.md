@@ -1,6 +1,6 @@
 # Perceptron
 
-## 18-224/624 Spring 2023 Final Tapeout Project
+### 18-224/624 Spring 2023 Final Tapeout Project
 Chris Stange
 
 ## Overview
