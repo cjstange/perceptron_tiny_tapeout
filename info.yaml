@@ -5,7 +5,7 @@ project:
     - chip.sv
     - decoder.v
     - perceptron.sv
-    - lib.sv
+    - lib.v
   top_module:  "toplevel_chip"
 
 # As everyone will have access to all designs, try to make it easy for someone new to your design to know what
