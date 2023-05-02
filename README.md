@@ -13,9 +13,9 @@ Chris Stange
 
 To add images, upload them into the repo and use the following format to embed them in markdown:
 
-![](/docs/Perceptron_datapath.pdf)
+![Datapath](/docs/Perceptron_datapath.pdf)
 
-![](/docs/Perceptron_fsm.pdf)
+![FSM](/docs/Perceptron_fsm.pdf)
 
 ## Inputs/Outputs
 
