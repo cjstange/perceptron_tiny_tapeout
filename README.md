@@ -1,7 +1,7 @@
 # Perceptron
 
+## 18-224/624 Spring 2023 Final Tapeout Project
 Chris Stange
-⋅18-224/624 Spring 2023 Final Tapeout Project
 
 ## Overview
 
@@ -9,12 +9,7 @@ The perceptron is one of the earliest machine learning models and acts as a bina
 
 ## How it Works
 
-At the implementation level, the perceptron is a pipelined MAC unit with some fancy control logic.  The perceptron uses a 6-bit (3.3) fixed point number representation which means numbers in the range of -4 to 3.875 can be used with a precision of .125.  
-
-
-Weights and the learning rate can be initialized to arbitary values and can also be read out combinationally after training.
-
-(deeper description of your project's internal operations, along with any diagrams. large parts of this can likely be copied from your project design plan and/or RTL checkpoint submission)
+At the implementation level, the perceptron is a pipelined MAC unit with some fancy control logic.  The perceptron uses a 6-bit (3.3) fixed point number representation which means numbers in the range of -4 to 3.875 can be used with a precision of .125.  Arbitrary weights, learning rates, and values can loaded onto the perceptron.  Weights can be read out combinationally after training.  
 
 ![Computation](/docs/computation.png)
 
